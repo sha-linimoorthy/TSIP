@@ -1,0 +1,196 @@
+.code-arch-implementation-page {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    padding: 10px;
+    position: relative;
+  }
+  
+  .code-arch-input-box {
+    color: #333;
+    margin-bottom: 10px;
+  }
+  
+  .code-arch-initial-button,
+  .code-arch-additional-buttons {
+    margin-bottom: 10px;
+  }
+  
+  .code-arch-messages-container {
+    flex: 1;
+    overflow-y: auto;
+    max-height: 80vh; 
+    margin-bottom: 90px;
+  }
+  
+  .code-arch-message {
+    margin: 10px 0;
+  }
+  
+  .code-arch-message-box {
+    padding: 10px;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .user-message .code-arch-message-box {
+    background-color: #f0f0f0; /* Adjust as needed */
+    align-self: flex-end;
+  }
+  
+  .bot-message .code-arch-message-box {
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .code-arch-user-text {
+    border-radius: 8px;
+    background-color:#d1c4e9; /* Red for user text */
+    padding: 10px;
+    box-shadow:
+    0 1px 1px hsla(0, 100%, 50%, 0.075),
+    0 2px 2px hsla(0, 0%, 50%, 0.075),
+    0 4px 4px hsla(0, 0%, 0%, 0.075),
+    0 8px 8px hsla(0, 0%, 50%, 0.075),
+    0 16px 16px hsla(0, 0%, 50%, 0.075);
+  }
+  
+  .code-arch-avatar-message-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+  }
+  
+  .code-arch-avatar-name-time {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap:5px;
+    margin-bottom: 10px;
+  }
+  
+  .code-arch-bot-name {
+    padding: 10px;
+    font-size: larger;
+    font-weight: 700;
+  }
+  
+  .code-arch-timestamp {
+    padding-left: 10px;
+    color: #888;
+  }
+  
+  .code-arch-custom-table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  .code-arch-custom-th,
+  .code-arch-custom-tr {
+    padding: 5px;
+  }
+  
+  .code-arch-buttons-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    width: 85%;
+    gap: 1px; 
+    margin: 5px 15px 10px 20px;
+  }
+  
+  .code-arch-left-buttons,
+  .code-arch-right-buttons {
+    display: flex;
+    gap: 8px;
+  }
+
+  .code-arch-left-buttons {
+    margin-left: 10px;
+  }
+
+  .code-arch-right-buttons{
+    margin-right: 15px;
+  }
+  
+  .code-arch-copyToClipboard,
+  .code-arch-download,
+  .code-arch-refresh {
+    border: none;
+    background: transparent;
+    cursor: pointer;
+    margin: 0 5px;
+  }
+  
+  .code-arch-loading-animation {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .code-arch-dot {
+    width: 8px;
+    height: 8px;
+    background-color: #333;
+    border-radius: 50%;
+    margin: 0 2px;
+    animation: bounce 1.4s infinite both;
+  }
+  
+  .code-arch-dot:nth-child(2) {
+    animation-delay: 0.2s;
+  }
+  
+  .code-arch-dot:nth-child(3) {
+    animation-delay: 0.4s;
+  }
+  
+  @keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {
+      transform: translateY(0);
+    }
+    40% {
+      transform: translateY(-30px);
+    }
+    60% {
+      transform: translateY(-15px);
+    }
+  }
+  
+
+  .code-arch-buttons{
+    display: flex;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 50%;
+    height:80px;
+    align-items: center;
+    padding: 10px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer; 
+    bottom: 20px;
+  }
+
+  .code-arch-input-box{
+    width: 200px;
+  }
+  .code-arch-file-upload{
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 200px;
+    color: #333;
+  }
+
+  .code-arch-gen-button{
+    padding: 10px 20px;
+    border: none;
+    color: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+  }

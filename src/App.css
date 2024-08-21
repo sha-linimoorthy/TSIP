@@ -1,0 +1,23 @@
+/* Global Styles */
+.app {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  margin: 0;
+  font-family: "Wittgenstein", serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  overflow: hidden;
+}
+
+.app.dark {
+  background-color: #192745;
+  color: #bdbdbd;
+}
+
+.app.light {
+  background-color: #fff;
+  color: #192745;
+}
+
+
